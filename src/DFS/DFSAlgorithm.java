@@ -68,11 +68,12 @@ public class DFSAlgorithm {
         int u;
 
         System.out.print(v + " ");
+        // Đánh dấu mảng v đã được xét
 
         chuaxet[v] = false;
 
         for (u = 1; u <= n; u++) {
-
+            // Kiểm tra u và v có kề và đã xét hay chưa
             if (G[v][u] == 1 && chuaxet[u])
 
                 DFS(u);
